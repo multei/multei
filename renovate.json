@@ -1,0 +1,35 @@
+{
+  "automerge": false,
+  "assignees": ["jimmyandrade"],
+  "enabled": true,
+  "enabledManagers": ["circleci", "docker-compose", "dockerfile", "github-actions", "npm", "nvm"],
+  "extends": [
+    "config:base"
+  ],
+  "ignoreDeps": ["gradle", "snyk"],
+  "labels": ["dependencies", "renovate"],
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
+  "packageRules": [
+    {
+      "updateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "packagePatterns": ["snyk"],
+      "labels": ["dependencies", "renovate", "security"]
+    },
+    {
+      "updateTypes": ["digest", "minor", "patch", "pin"],
+      "automerge": true
+    }
+  ],
+  "reviewers": ["jimmyandrade"],
+  "schedule": "every weekend",
+  "semanticCommits": "enabled",
+  "unicodeEmoji": true,
+  "updateLockFiles": true,
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "@multei/mobile",
+  "version": "0.0.1",
+  "description": "Multei! Mobile App",
+  "keywords": [
+    "multei",
+    "multei mobile",
+    "multei app"
+  ],
+  "homepage": "https://github.com/multei/multei/tree/main/apps/mobile#readme",
+  "bugs": {
+    "url": "https://github.com/multei/multei/issues"
+  },
+  "repository": {
+    "directory": "apps/mobile",
+    "type": "git",
+    "url": "https://github.com/multei/multei"
+  },
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "detox:build": "detox build",
+    "detox:test": "detox test",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "testc": "jest --coverage",
+    "testu": "jest -u",
+    "testw": "jest --watch"
+  },
+  "engines": {
+    "node": ">=10.13.0",
+    "npm": ">=5.6.0",
+    "yarn": ">=0.24.4"
+  },
+  "jest": {
+    "globals": {
+      "__DEV__": true
+    },
+    "preset": "react-native",
+    "testEnvironment": "jsdom"
+  },
+  "detox": {
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/mobile/Build/Products/Debug-iphonesimulator/mobile.app",
+        "build": "xcodebuild -workspace ios/mobile.xcworkspace -scheme mobile -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11 Pro"
+        }
+      }
+    },
+    "test-runner": "jest"
+  },
+  "dependencies": {
+    "react-native": "0.63.2"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "3.0.1",
+    "detox": "17.3.1",
+    "metro-react-native-babel-preset": "0.61.0"
+  }
+}

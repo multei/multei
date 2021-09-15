@@ -1,0 +1,11 @@
+{
+  "name": "openalpr-example",
+  "private": true,
+  "dependencies": {
+    "openalpr": "file:.."
+  },
+  "scripts": {
+    "debug": "DEBUG=openalpr,openalpr:* npm start",
+    "start": "node index.js"
+  }
+}

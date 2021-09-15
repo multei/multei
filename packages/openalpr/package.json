@@ -1,0 +1,68 @@
+{
+  "name": "openalpr",
+  "version": "0.3.4-alpha.2",
+  "description": "Open ALPR JavaScript SDK for Multei!",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "jsnext:main": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "source": "./src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "directory": "packages/openalpr",
+    "type": "git",
+    "url": "git+https://github.com/multei/multei.git"
+  },
+  "keywords": [
+    "multei",
+    "openalpr"
+  ],
+  "author": "Jimmy Andrade <contato@jimmyandrade.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/multei/multei/issues"
+  },
+  "homepage": "https://github.com/multei/multei/tree/main/packages/openalpr#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "10.0.0",
+    "@rollup/plugin-typescript": "8.2.5",
+    "@stryker-mutator/core": "5.4.0",
+    "@stryker-mutator/html-reporter": "3.1.0",
+    "@stryker-mutator/javascript-mutator": "4.0.0",
+    "@stryker-mutator/jest-runner": "5.4.0",
+    "debug": "4.3.2",
+    "rollup": "2.56.3"
+  },
+  "dependencies": {
+    "axios": "0.21.4"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "npm run develop",
+    "develop": "rollup -c -w",
+    "jest": "jest",
+    "pretest": "npm run build",
+    "preversion": "npm test",
+    "run-example": "cd example && npm install && npm run build",
+    "start": "npm run develop",
+    "stryker": "stryker run",
+    "test": "jest",
+    "testc": "jest --coverage",
+    "testu": "jest --u",
+    "testw": "jest --watch"
+  }
+}

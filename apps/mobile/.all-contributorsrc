@@ -1,0 +1,53 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "guilhermeleonel",
+      "name": "Guilherme Leonel",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/727444?v=4",
+      "profile": "https://github.com/guilhermeleonel",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jimmyandrade",
+      "name": "Jimmy Andrade",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2307245?v=4",
+      "profile": "http://jimmyandrade.com",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "tuliooassis",
+      "name": "Túlio Assis",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/17442350?v=4",
+      "profile": "http://tuliooassis.github.io",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    },
+    {
+      "login": "paulononaka",
+      "name": "Paulo Henrique Nonaka",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/449081?v=4",
+      "profile": "https://www.linkedin.com/in/paulononaka/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "mobile-flutter",
+  "projectOwner": "multei",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

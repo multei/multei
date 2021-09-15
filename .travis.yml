@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "12.6.0"
+install:
+  - npm ci --no-optional
+script:
+  - npm tesrt
+cache: npm

@@ -1,0 +1,38 @@
+# chore(typo-cli): add typo-ci support
+
+dictionaries:
+  - pt_BR
+  - en
+
+excluded_files:
+  - "vendor/**/*"
+  - "node_modules/**/*"
+  - "*.key"
+  - "*.enc"
+  - "*.min.css"
+  - "*.css.map"
+  - "*.min.js"
+  - "*.js.map"
+  - "*.mk"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "Gemfile.lock"
+  - ".typo-ci.yml"
+
+excluded_words:
+  - Gemfile
+  - StrykerOptions
+  - andrade
+  - dev
+  - fileurl
+  - iml
+  - jimmyandrade
+  - lajimmy_andrade
+  - stryker
+  - stryker-mutator
+  - testc
+  - testm
+  - testu
+  - testw
+  - typoci
+spellcheck_filenames: true

@@ -84,9 +84,7 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and *not* Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
+!public
 
 # vuepress build output
 .vuepress/dist
@@ -102,3 +100,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# IDEA Workspace file
+.idea/workspace.xml
+
+# stryker temp files
+**/.stryker-tmp
+**/reports/mutation/html/
+
+# always use jest config file in TypeScript format
+jest.config.js
+!jest.config.ts

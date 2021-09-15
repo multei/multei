@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "workspaces": {
+    "packages": ["./apps/mobile", "./packages/openalpr", "./packages/openalpr/example"]
+  },
+  "dependencies": {
+    "react": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/preset-env": "7.15.6",
+    "@babel/runtime": "7.15.4",
+    "@types/jest": "27.0.1",
+    "babel-jest": "27.2.0",
+    "eslint": "7.32.0",
+    "husky": "7.0.2",
+    "jest": "27.2.0",
+    "react-test-renderer": "17.0.2",
+    "ts-node": "10.2.1"
+  }
+}
