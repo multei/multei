@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/multei/multei/tree/main/packages/openalpr#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-commonjs": "21.0.2",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "10.0.0",
     "@rollup/plugin-typescript": "8.2.5",
