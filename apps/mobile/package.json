@@ -55,7 +55,7 @@
     "test-runner": "jest"
   },
   "dependencies": {
-    "react-native": "0.63.2"
+    "react-native": "0.88.1"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "3.0.1",
